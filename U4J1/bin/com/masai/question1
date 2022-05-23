@@ -1,0 +1,19 @@
+Why String is immutable in java?
+==> When we create a string in java like String s1="Hello"; then an object will be created in string poll(Hello)and s1 will be pointing to hello.
+now if we again do String s2="Hello"; then another object will be created s2 will point to hello beacuse JVM will first check if the same object is present ,
+in String pool or not if not present then only a new one is created else not.
+
+now if suppose java allows string mutable then if we change s1 to hello world then s2 value will also be hello world. so java string is immutable.  
+
+what is the difference between String and String Builder?
+==> strings are immutable but String builder make string mutable.
+string builder will not create a new modified instance of the current string object but to do the modification in the exsisting string.
+
+And Write some of the methods of String class at least 5 with example?
+=> String str="priyanshu";
+   String str1="example";
+1. str.charAt(4)---->'a'
+2.subString(2)--->"iyanshu"
+3. str.indexOf('r')---> 1
+4 str.toCharArray ---->["p","r","i","y","a","n","s","h","u"]
+5 str.equals(str1)--->False.
