@@ -1,0 +1,59 @@
+Explain the difference between IS-A and Has-A relationship with the help of an
+example?
+
+IS-A relationship ->
+Inheritance in java represent IS-A reationship ,which
+is also known as parent child relationship.
+example:
+ class Animal{
+ void funX(){
+ System.out.print("this ia Animal calss");
+ }
+ }
+ 
+ class Dog extends Animal{
+ @Override
+ void funX(){
+ System.out.print("this ia dog calss");
+ }
+ }
+ 
+ Here: Dog IS-A Animal.
+
+
+
+
+HAS-A realtionship ->
+ HAS-A realation is a relation between two object.
+ when one class contain other class as an insatnce is called 
+ HAS-A relation.
+ 
+ example:
+ 
+ class A{
+ void funX(){
+ System.out.print("this ia A calss");
+ }
+ }
+ 
+ class B {
+
+  A a1 = new A();
+  
+ void funX(){
+ System.out.print("this ia B calss");
+ }
+ public static void main(String[] args){
+  B b1 = new B();
+ 
+ }
+ 
+ 2).explain about access modifiers and their accessibility?
+ 
+ access modifier gives the accessibility of class ,methord,variable in diff packages.
+ there are 4 type of access modifier.
+ 1).Public -> everywhere in any package.
+ 2).default -> act public inside same package but act private outside the package.
+ 3).private -> inside same class.
+ 4).protected ->Act as default but  can be used ouside the package because of
+                inheritance.
